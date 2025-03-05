@@ -1,0 +1,709 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "News Cycle", serif;
+}
+
+body {
+    background: #242020;
+    color: white;
+}
+
+.hero-header {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #242020;
+    box-shadow: 0px 0px 15px 15px rgba(39, 166, 3, 0.3);
+    font-family: "News Cycle", serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "News Cycle", serif;
+}
+
+header {
+
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: "News Cycle", serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.logo .logo-text {
+    font-family: "News Cycle", serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    font-family: "News Cycle", serif;
+    font-size: 20px;
+
+}
+
+.navlinks li {
+    margin: 10px 15px;
+}
+
+.navlinks a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navlinks li a:hover {
+    color: #27A603;
+    transition: 0.5s;
+
+}
+
+.togglebtn {
+
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.togglebtn span {
+    width: 30px;
+    height: 4px;
+    background-color: #27A603;
+    margin: 4px;
+    display: block;
+
+}
+
+.container {
+    margin-top: 65px;
+    font-family: "News Cycle", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 15px rgba(39, 166, 3, 0.3);
+    flex-wrap: wrap;
+    padding: 10px 110px;
+}
+
+.container .hero-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    overflow: hidden;
+    padding: 0px;
+    border: 0px solid #444;
+    box-shadow: 0px 0px 15px 15px rgba(39, 166, 3, 0.3);
+}
+
+.hero-pic img {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.1);
+}
+
+.hero-text {
+    font-family: "News Cycle", serif;
+    letter-spacing: 2px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 15px;
+
+}
+
+.hero-text h5 {
+    color: #e5e5e5;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.hero-text h5 span {
+    color: #27A603;
+    font-size: 16px;
+}
+
+.hero-text h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: #e5e5e5;
+    padding: 0px;
+
+}
+
+.btn-group {
+    margin: 25px 0;
+}
+
+.btn-group .btn {
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+
+.btn-group .btn:hover {
+    color: #27A603;
+    transition: 0.5s;
+}
+
+.btn.active {
+    border-color: #27A603;
+    text-decoration: none;
+}
+
+.hero-text .social i {
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+
+}
+
+.hero-text .social i:hover {
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
+
+/* CSS PORTFOLIO */
+
+.portfolio {
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 15px;
+}
+
+.portfolio h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "News Cycle", serif;
+    letter-spacing: 5px;
+}
+
+.portfolio-container {
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    padding: 100px 200px;
+
+
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.portfolio-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.portfolio-item:hover::before {
+    opacity: 1;
+}
+
+.portfolio-item:hover .project-link {
+    opacity: 1;
+}
+
+.portfolio-item:hover::before {
+    opacity: 1;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.8s ease-in-out;
+}
+
+.project-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    font-family: "News Cycle", serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+/*CSS TELA PROJETOS WEB e OS*/
+
+
+.projetos_web .projetos_os {
+    padding: 15px;
+}
+
+.projetos_web h1 {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.projetos_os h1 {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Isso empurra o botão para o final */
+    height: 100%;
+    /* O card ocupa toda a altura disponível */
+    margin-bottom: 5px;
+    color: whitesmoke;
+    box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.3);
+    background: #242020;
+    height: 380px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+
+    transform: translateY(20px);
+    /* Começa mais abaixo */
+    opacity: 0;
+    /* Invisível no início */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.card div:last-child {
+    margin-top: auto;
+    /* Isso faz com que ele vá para o final do card */
+}
+
+.subir {
+    transform: translateY(-10px);
+    /* Sobe levemente */
+    opacity: 1;
+    /* Fica visível */
+}
+
+.card img {
+
+    margin: 0px 100px;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.card h5 {
+    margin-top: 20px;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.card p {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.card a {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 0px solid #27A603;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    transition: 0.3s;
+
+}
+
+.card a:hover {
+    color: #27A603;
+}
+
+
+
+.icons_web {
+    width: 100%;
+    display: inline;
+    margin-bottom: 20px;
+
+}
+
+
+.icons_web img {
+    color: whitesmoke;
+    width: 20px;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 0px;
+
+}
+
+
+
+
+
+
+/*   background-color: #333; Links para código-fonte e demonstração */
+
+
+/*CSS TELA FORMACAO*/
+
+#titulo-formacao {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "News Cycle", serif;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 4px solid #27A603;
+}
+
+.event {
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background: #27A603;
+    border-radius: 50%;
+}
+
+.event h2 {
+    color: black;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.event p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*CSS TELA CONTATO*/
+
+.container-contato-body {
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "News Cycle", serif;
+
+
+}
+
+.container-contato-body h1 {
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "News Cycle", serif;
+    letter-spacing: 5px;
+
+}
+
+.container-contato {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #222;
+    width: 360px;
+    height: 350px;
+    color: white;
+
+
+    font-family: "News Cycle", serif;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(39, 166, 3, 0.3);
+}
+
+.container-contato a p {
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.container-contato a p:hover {
+    color: #27A603;
+    transition: 0.5s;
+}
+
+.container-contato img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.container-contato p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+/* RESPONSIVIDADE */
+
+
+@media(max-width:1180px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .portfolio {
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+
+    }
+
+
+    .portfolio-container {
+        max-width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 50px;
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .header {
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    .togglebtn {
+        display: flex;
+
+    }
+
+    .navlinks {
+        display: none;
+        /* Esconde o menu */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .navlinks.open {
+        display: flex;
+        z-index: 1;
+    }
+
+    .navlinks li {
+        margin: 15px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+
+    }
+
+    .hero-pic {
+        max-width: 90%;
+        width: 70%;
+        height: 70%;
+    }
+
+    .hero-pic img {
+        width: 100%;
+        /* Ajusta a largura da imagem */
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .portfolio-container {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+    .portfolio-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .card-projetos {
+        padding: 30px;
+    }
+
+    .hero-header {
+        height: 100%;
+    }
+
+    .timeline {
+        margin-bottom: 20px;
+        height: 60%;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px
+    }
+
+    .container-contato {
+        max-width: 100%;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+}

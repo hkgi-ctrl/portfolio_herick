@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação Farejando</title>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: #111;
+            color: whitesmoke;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            max-width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #home {
+            display: flex;
+            text-align: center;
+            justify-content: left;
+        }
+
+        .header_projetos {
+            display: flex;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header_projetos h1 {
+            margin-left: 350px;
+            font-family: "News Cycle", serif;
+            letter-spacing: 3px;
+        }
+
+
+        .wifi {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            justify-content: center;
+
+        }
+
+
+        .wifi img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+
+        .wifi h5 {
+            font-size: 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #27A603;
+        }
+
+
+        #projetos_os {
+            margin-top: 5px;
+
+            margin-bottom: 40px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: whitesmoke;
+            font-size: 25px;
+        }
+
+        #projetos_os img {
+            margin-top: 5px;
+            width: 110px;
+            height: auto;
+            border-radius: 25px;
+        }
+
+
+        .logo_os {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            font-size: 25px;
+            letter-spacing: 1px;
+
+        }
+
+        .swiper-container {
+            width: 50%;
+            max-width: 60%;
+            height: 70vh;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            border-radius: 10px;
+        }
+
+        .swiper-slide img {
+            max-width: 38%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 30px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #27A603;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 18px;
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            .swiper-container {
+                width: 95%;
+                height: 60vh;
+            }
+
+            .swiper-slide img {
+                max-width: 80%;
+            }
+
+            .back img {
+                width: 30px;
+            }
+
+            .logo_os img {
+                width: 100px;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header_projetos">
+        <a id="home" href="index.html">
+            <div class="wifi">
+                <img src="images/wifi.png" alt="Foto perfil">
+                <h5>Home</h5>
+            </div>
+        </a>
+
+        <div>
+            <h1>Farejando - Rede social e comercial Pet</h1>
+        </div>
+
+    </div>
+
+    <a id="projetos_os" href="projetos_OS.html">
+        <div>
+            <h5>Projetos </h5><img src="images/OS_projeto.jpeg">
+        </div>
+
+
+    </a>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images_farejando/1. login1.png" alt="Tela 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="images_farejando/3. cadastro.png" alt="Tela 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="images_farejando/3.1 dadoscadastro.png" alt="Tela 3">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/4. editfotoperfil.png" alt="Tela 4">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/5. confirmcadastro.png" alt="Tela 5">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/6. feedvazio.png" alt="Tela 6">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/7. primeiropost.png" alt="Tela 7">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/8. postar.png" alt="Tela 8">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/9. busca.png" alt="Tela 9">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/10. listausuarios.png" alt="Tela 10">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/11. interacoes.png" alt="Tela 11">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/12. feed.png" alt="Tela 12">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images_farejando/13. barranotificacoes.png" alt="Tela 13">
+            </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        });
+    </script>
+</body>
+
+</html>

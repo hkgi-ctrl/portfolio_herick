@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Herick Rafael</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courgette&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div style="background-image:radial-gradient(#242020,black)" class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img style="width: 40px; margin-right:10px" src="images/wifi.png" alt="Foto perfil">
+                    <div class="logo-text">Herick Rafael</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="formacao.html">Formação</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/foto2.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+
+                    <h1> Herick Rafael</h1>
+                    <h5><span class="input">Frontend Developer</span></h5>
+                    <p>
+                        Atualmente em transição de carreira para a área de Programação, com foco em desenvolvimento
+                        OutSystems e Full Stack Web. Acredito que a tecnologia move o mundo e essa constante evolução e
+                        aprendizado contínuo muito me motiva. Pretendo aplicar minha capacidade analítica, organização e
+                        habilidades interpessoais adquiridas ao longo de minha trajetória na área de Gestão para criar
+                        soluções de software inovadoras e eficientes.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="curriculo.pdf" download="Curriculo_HerickRafael.pdf" class="btn active">Download CV</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/herick-rafael/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/hkgi-ctrl"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/herick_rafa"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var togglebtn = document.querySelector(".togglebtn");
+            var nav = document.querySelector(".navlinks");
+
+            togglebtn.addEventListener("click", function () {
+                nav.classList.toggle("open");
+            });
+        });
+
+
+        var typed = new Typed(".input", {
+            strings: ["Web Developer", "OutSystems Developer Jr.", "Full Stack Developer Jr."],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+
+    </script>
+</body>
+
+</html>
